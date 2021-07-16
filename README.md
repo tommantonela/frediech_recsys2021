@@ -17,13 +17,18 @@ Note: As per Twitter TOS, the shared graphs only include user and tweet ids invo
 Note2: The original data collection can be obtained upon request to the authors of ["Political Discourse on Social Media: Echo Chambers, Gatekeepers, and the Price of Bipartisanship"](https://arxiv.org/abs/1801.01665).
 
 In the folder ``data`` you will find:
-* ``df_tweets_users_created.csv`` tweets metadata incluiding ``tweet_id``, ``user_id`` and date of creation. As the file contains ``long`` ids, try not to open it with spredsheet software.
-* ``df_user_leaning.csv`` users leaning information, including their ``own_leaning``, ``leaning_mentions``, ``leaning_retweets``, ``leaning_replies``, ``leaning_all``. As the file contains ``long`` ids, try not to open it with spredsheet software.
-* ``train_ds.pickle`` and ``train_ds_no_neg_smp.pickle`` are helper files for ``FRediECH`` to avoid needing to have everything loaded into memory.
-* ``embeddings-dates.h5`` is the embedding model to compute node distances.
-* ``cos.npy`` containes pre-computed cosine similarity between nodes.
-* ``training_tweeets.npy`` contains the BERT representation of training tweets.
 * Folders ``training`` and ``test``. Each folder contains four files, one for each type of interaction (mentions, replies, retweets) and one mixing the three types.
+
+Additional files:
+
+* [``df_tweets_users_created.csv``](https://drive.google.com/file/d/1VScLKtvvp5K7evcObPChdpdA3GB3py7v/view?usp=sharing) tweets metadata incluiding ``tweet_id``, ``user_id`` and date of creation. As the file contains ``long`` ids, try not to open it with spredsheet software.
+* [``df_user_leaning.csv``](https://drive.google.com/file/d/1f6vtdB-kuzEdA-dz09LhmzBSdX4v5MAq/view?usp=sharing) users leaning information, including their ``own_leaning``, ``leaning_mentions``, ``leaning_retweets``, ``leaning_replies``, ``leaning_all``. As the file contains ``long`` ids, try not to open it with spredsheet software.
+* [``train_ds.pickle``](https://drive.google.com/file/d/18flCmAY74nVoOOSsg2l8OgroRPpbRh1c/view?usp=sharing), [``train_ds_no_neg_smp.pickle``](https://drive.google.com/file/d/18g5hj9_o8WmFWnXmBJ1pLor4ncDzIY8R/view?usp=sharing) and [``test_ds.pickle``](https://drive.google.com/file/d/18cAWABzFbYiqNBpXFWStwjczaIAsLxsP/view?usp=sharing) are helper files for ``FRediECH`` to avoid needing to have everything loaded into memory.
+* [``embeddings-dates.h5``](https://drive.google.com/file/d/18fTd2HYBBnYgUx3ikXU1bxJp_P_r3waw/view?usp=sharing) is the embedding model to compute node distances.
+* [``cos.npy``](https://drive.google.com/file/d/18bj8EeYQ9wYdfE4EHpFiegGhHnpRR5HI/view?usp=sharing) contains pre-computed cosine similarity between nodes.
+* [``training_tweeets.npy``](https://drive.google.com/file/d/18gbH_hI7FYXvFiii6p_C5Fnr0dbCdFwn/view?usp=sharing) contains the BERT representation of training tweets.
+
+Note: this files are stored in GDrive do to GitHub size limitations.
 
 #### Graph format
 
