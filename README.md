@@ -16,6 +16,7 @@ Note: As per Twitter TOS, the shared graphs only include user and tweet ids invo
 
 Note2: The original data collection can be obtained upon request to the authors of ["Political Discourse on Social Media: Echo Chambers, Gatekeepers, and the Price of Bipartisanship"](https://arxiv.org/abs/1801.01665).
 
+Note 3: The [``Faking it!``](https://github.com/knife982000/FakingIt) can be used to rehydrate the tweets collection based on the ids in the graphs.
 In the folder ``data`` you will find:
 * Folders ``training`` and ``test``. Each folder contains four files, one for each type of interaction (mentions, replies, retweets) and one mixing the three types.
 
@@ -57,6 +58,9 @@ Example of edge with attributes:
 ```
 (1234567890, 9876543210, {'weight': 5, 'date': datetime.datetime(2016, 10, 11, 6, 20, 14), 'date_replies': None, 'date_mentions': datetime.datetime(2016, 10, 11, 6, 20, 14), 'date_retweets': datetime.datetime(2016, 10, 11, 6, 20, 14), 'tweets_replies': [], 'tweets_mentions': [1234567890000987, 12345678765434567, 123456787654324567], 'tweets_retweets': [12345673454324567, 9876673454324567]})
 ```
+
+## Model
+In the ``model`` folder, you can find the final ``FRediECH`` model reported in the paper.
 
 ## Files
 
